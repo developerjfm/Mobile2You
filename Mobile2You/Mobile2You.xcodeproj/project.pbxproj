@@ -15,6 +15,7 @@
 		BCDED88B24F0329100C27A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDED88A24F0329100C27A68 /* Assets.xcassets */; };
 		BCDED88E24F0329100C27A68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDED88C24F0329100C27A68 /* LaunchScreen.storyboard */; };
 		BCDED89A24F0335F00C27A68 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED89924F0335F00C27A68 /* Movie.swift */; };
+		BCDED89C24F0339100C27A68 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED89B24F0339100C27A68 /* MovieList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BCDED88D24F0329100C27A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCDED88F24F0329100C27A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCDED89924F0335F00C27A68 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		BCDED89B24F0339100C27A68 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		CDCA2F93B46B43AF2F26A7A4 /* Pods-Mobile2You.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile2You.release.xcconfig"; path = "Target Support Files/Pods-Mobile2You/Pods-Mobile2You.release.xcconfig"; sourceTree = "<group>"; };
 		F0A2DF69F059366D995B8DAB /* Pods-Mobile2You.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile2You.debug.xcconfig"; path = "Target Support Files/Pods-Mobile2You/Pods-Mobile2You.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				BCDED89924F0335F00C27A68 /* Movie.swift */,
+				BCDED89B24F0339100C27A68 /* MovieList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				BCDED88624F0328D00C27A68 /* ViewController.swift in Sources */,
 				BCDED88224F0328D00C27A68 /* AppDelegate.swift in Sources */,
 				BCDED89A24F0335F00C27A68 /* Movie.swift in Sources */,
+				BCDED89C24F0339100C27A68 /* MovieList.swift in Sources */,
 				BCDED88424F0328D00C27A68 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
