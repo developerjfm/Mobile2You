@@ -10,7 +10,6 @@
 		6CFB9BD24A5FF62B88242668 /* Pods_Mobile2You.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17682228FF390F84E2C8BB4 /* Pods_Mobile2You.framework */; };
 		BCDED88224F0328D00C27A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED88124F0328D00C27A68 /* AppDelegate.swift */; };
 		BCDED88424F0328D00C27A68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED88324F0328D00C27A68 /* SceneDelegate.swift */; };
-		BCDED88624F0328D00C27A68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED88524F0328D00C27A68 /* ViewController.swift */; };
 		BCDED88924F0328D00C27A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDED88724F0328D00C27A68 /* Main.storyboard */; };
 		BCDED88B24F0329100C27A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDED88A24F0329100C27A68 /* Assets.xcassets */; };
 		BCDED88E24F0329100C27A68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDED88C24F0329100C27A68 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,8 @@
 		BCDED89E24F033CB00C27A68 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED89D24F033CB00C27A68 /* MovieViewModel.swift */; };
 		BCDED8A024F033EC00C27A68 /* ServiceConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED89F24F033EC00C27A68 /* ServiceConnection.swift */; };
 		BCDED8A224F0342000C27A68 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED8A124F0342000C27A68 /* Constants.swift */; };
+		BCDED8A424F0351800C27A68 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED8A324F0351800C27A68 /* MovieTableViewController.swift */; };
+		BCDED8A724F0353700C27A68 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED8A624F0353700C27A68 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,6 @@
 		BCDED87E24F0328D00C27A68 /* Mobile2You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobile2You.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDED88124F0328D00C27A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCDED88324F0328D00C27A68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCDED88524F0328D00C27A68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCDED88824F0328D00C27A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCDED88A24F0329100C27A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCDED88D24F0329100C27A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		BCDED89D24F033CB00C27A68 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		BCDED89F24F033EC00C27A68 /* ServiceConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConnection.swift; sourceTree = "<group>"; };
 		BCDED8A124F0342000C27A68 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCDED8A324F0351800C27A68 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		BCDED8A624F0353700C27A68 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		CDCA2F93B46B43AF2F26A7A4 /* Pods-Mobile2You.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile2You.release.xcconfig"; path = "Target Support Files/Pods-Mobile2You/Pods-Mobile2You.release.xcconfig"; sourceTree = "<group>"; };
 		F0A2DF69F059366D995B8DAB /* Pods-Mobile2You.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile2You.debug.xcconfig"; path = "Target Support Files/Pods-Mobile2You/Pods-Mobile2You.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,7 +98,6 @@
 				BCDED89524F0332E00C27A68 /* View */,
 				BCDED88124F0328D00C27A68 /* AppDelegate.swift */,
 				BCDED88324F0328D00C27A68 /* SceneDelegate.swift */,
-				BCDED88524F0328D00C27A68 /* ViewController.swift */,
 				BCDED88724F0328D00C27A68 /* Main.storyboard */,
 				BCDED88A24F0329100C27A68 /* Assets.xcassets */,
 				BCDED88C24F0329100C27A68 /* LaunchScreen.storyboard */,
@@ -108,6 +109,8 @@
 		BCDED89524F0332E00C27A68 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCDED8A524F0352800C27A68 /* cell */,
+				BCDED8A324F0351800C27A68 /* MovieTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +139,14 @@
 				BCDED8A124F0342000C27A68 /* Constants.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		BCDED8A524F0352800C27A68 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				BCDED8A624F0353700C27A68 /* MovieTableViewCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,11 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCDED88624F0328D00C27A68 /* ViewController.swift in Sources */,
+				BCDED8A724F0353700C27A68 /* MovieTableViewCell.swift in Sources */,
 				BCDED88224F0328D00C27A68 /* AppDelegate.swift in Sources */,
 				BCDED89A24F0335F00C27A68 /* Movie.swift in Sources */,
 				BCDED89C24F0339100C27A68 /* MovieList.swift in Sources */,
 				BCDED8A024F033EC00C27A68 /* ServiceConnection.swift in Sources */,
+				BCDED8A424F0351800C27A68 /* MovieTableViewController.swift in Sources */,
 				BCDED88424F0328D00C27A68 /* SceneDelegate.swift in Sources */,
 				BCDED89E24F033CB00C27A68 /* MovieViewModel.swift in Sources */,
 				BCDED8A224F0342000C27A68 /* Constants.swift in Sources */,
