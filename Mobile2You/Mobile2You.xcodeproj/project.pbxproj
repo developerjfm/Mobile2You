@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CFB9BD24A5FF62B88242668 /* Pods_Mobile2You.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17682228FF390F84E2C8BB4 /* Pods_Mobile2You.framework */; };
 		BCDED88224F0328D00C27A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED88124F0328D00C27A68 /* AppDelegate.swift */; };
 		BCDED88424F0328D00C27A68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED88324F0328D00C27A68 /* SceneDelegate.swift */; };
 		BCDED88624F0328D00C27A68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED88524F0328D00C27A68 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B17682228FF390F84E2C8BB4 /* Pods_Mobile2You.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile2You.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDED87E24F0328D00C27A68 /* Mobile2You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobile2You.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDED88124F0328D00C27A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCDED88324F0328D00C27A68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		BCDED88A24F0329100C27A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCDED88D24F0329100C27A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCDED88F24F0329100C27A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCA2F93B46B43AF2F26A7A4 /* Pods-Mobile2You.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile2You.release.xcconfig"; path = "Target Support Files/Pods-Mobile2You/Pods-Mobile2You.release.xcconfig"; sourceTree = "<group>"; };
+		F0A2DF69F059366D995B8DAB /* Pods-Mobile2You.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile2You.debug.xcconfig"; path = "Target Support Files/Pods-Mobile2You/Pods-Mobile2You.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFB9BD24A5FF62B88242668 /* Pods_Mobile2You.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3910C9CC3F2234EE6C3735B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0A2DF69F059366D995B8DAB /* Pods-Mobile2You.debug.xcconfig */,
+				CDCA2F93B46B43AF2F26A7A4 /* Pods-Mobile2You.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		795F3EAEE8C9E64DC39C971D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B17682228FF390F84E2C8BB4 /* Pods_Mobile2You.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BCDED87524F0328D00C27A68 = {
 			isa = PBXGroup;
 			children = (
 				BCDED88024F0328D00C27A68 /* Mobile2You */,
 				BCDED87F24F0328D00C27A68 /* Products */,
+				3910C9CC3F2234EE6C3735B5 /* Pods */,
+				795F3EAEE8C9E64DC39C971D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCDED89224F0329100C27A68 /* Build configuration list for PBXNativeTarget "Mobile2You" */;
 			buildPhases = (
+				3E8A3A8350B32D6597806998 /* [CP] Check Pods Manifest.lock */,
 				BCDED87A24F0328D00C27A68 /* Sources */,
 				BCDED87B24F0328D00C27A68 /* Frameworks */,
 				BCDED87C24F0328D00C27A68 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E8A3A8350B32D6597806998 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mobile2You-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BCDED87A24F0328D00C27A68 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		BCDED89324F0329100C27A68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A2DF69F059366D995B8DAB /* Pods-Mobile2You.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +352,7 @@
 		};
 		BCDED89424F0329100C27A68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDCA2F93B46B43AF2F26A7A4 /* Pods-Mobile2You.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
