@@ -14,6 +14,7 @@
 		BCDED88924F0328D00C27A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDED88724F0328D00C27A68 /* Main.storyboard */; };
 		BCDED88B24F0329100C27A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDED88A24F0329100C27A68 /* Assets.xcassets */; };
 		BCDED88E24F0329100C27A68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDED88C24F0329100C27A68 /* LaunchScreen.storyboard */; };
+		BCDED89A24F0335F00C27A68 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDED89924F0335F00C27A68 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BCDED88A24F0329100C27A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCDED88D24F0329100C27A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCDED88F24F0329100C27A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCDED89924F0335F00C27A68 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		CDCA2F93B46B43AF2F26A7A4 /* Pods-Mobile2You.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile2You.release.xcconfig"; path = "Target Support Files/Pods-Mobile2You/Pods-Mobile2You.release.xcconfig"; sourceTree = "<group>"; };
 		F0A2DF69F059366D995B8DAB /* Pods-Mobile2You.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile2You.debug.xcconfig"; path = "Target Support Files/Pods-Mobile2You/Pods-Mobile2You.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +50,6 @@
 				F0A2DF69F059366D995B8DAB /* Pods-Mobile2You.debug.xcconfig */,
 				CDCA2F93B46B43AF2F26A7A4 /* Pods-Mobile2You.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +82,10 @@
 		BCDED88024F0328D00C27A68 /* Mobile2You */ = {
 			isa = PBXGroup;
 			children = (
+				BCDED89824F0334B00C27A68 /* Util */,
+				BCDED89724F0334100C27A68 /* ViewModel */,
+				BCDED89624F0333A00C27A68 /* Model */,
+				BCDED89524F0332E00C27A68 /* View */,
 				BCDED88124F0328D00C27A68 /* AppDelegate.swift */,
 				BCDED88324F0328D00C27A68 /* SceneDelegate.swift */,
 				BCDED88524F0328D00C27A68 /* ViewController.swift */,
@@ -90,6 +95,35 @@
 				BCDED88F24F0329100C27A68 /* Info.plist */,
 			);
 			path = Mobile2You;
+			sourceTree = "<group>";
+		};
+		BCDED89524F0332E00C27A68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCDED89624F0333A00C27A68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCDED89924F0335F00C27A68 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCDED89724F0334100C27A68 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BCDED89824F0334B00C27A68 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +225,7 @@
 			files = (
 				BCDED88624F0328D00C27A68 /* ViewController.swift in Sources */,
 				BCDED88224F0328D00C27A68 /* AppDelegate.swift in Sources */,
+				BCDED89A24F0335F00C27A68 /* Movie.swift in Sources */,
 				BCDED88424F0328D00C27A68 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
