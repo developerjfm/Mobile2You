@@ -28,7 +28,7 @@ class MovieTableViewController: UITableViewController {
             self.image.alpha = 1.0
         }
     }
-    
+   
     @IBAction func actionLike(_ sender: Any) {
         if auxLike == false {
             auxLike = true
@@ -39,11 +39,13 @@ class MovieTableViewController: UITableViewController {
         }
     }
     
+    // MARK: - obtendo Filmes similares
     func getMovieSimilarDetails() {
         viewModel.fetchPopularSimilarMoviesData { [weak self] in
             self?.tableView.reloadData()
         }
     }
+    // MARK: - obtendo Filme
     func getMovieDetails() {
         viewModel.fetchPopularMoviesData { [weak self] in
             

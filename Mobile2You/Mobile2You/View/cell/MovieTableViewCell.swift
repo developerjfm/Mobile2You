@@ -20,6 +20,7 @@ class MovieTableViewCell: UITableViewCell {
         // Configure the view for the selected state
 
     }
+    // MARK: - preenchimento dos valores
     func setCellWithValuesOf(_ movie:Movie) {
         self.nameMovie.text = movie.original_title
         self.yearMovie.text = movie.release_date
