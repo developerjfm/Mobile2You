@@ -21,6 +21,12 @@ class MovieTableViewController: UITableViewController {
         
         getMovieSimilarDetails()
         getMovieDetails()
+        
+        image.alpha = 0.0
+        
+        UIView.animate(withDuration: 2.5) {
+            self.image.alpha = 1.0
+        }
     }
     
     @IBAction func actionLike(_ sender: Any) {

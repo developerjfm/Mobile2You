@@ -11,14 +11,17 @@ class MovieTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        imageView?.sd_imageIndicator = SDWebImageActivityIndicator.grayLarge
+        imageView?.sd_imageIndicator = SDWebImageProgressIndicator.default
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
+
     }
     func setCellWithValuesOf(_ movie:Movie) {
-        self.nameMovie.text = movie.poster_path
+        self.nameMovie.text = movie.original_title
         self.yearMovie.text = movie.release_date
        
         var result = ""
@@ -30,13 +33,14 @@ class MovieTableViewCell: UITableViewCell {
                 }
             }
         }
-      
         
         self.genreMovie.text = result
      
         if let backdrop_path = movie.poster_path{
             let url = URL.init(string:  TheMovieDBAPI.urlImages + ImageSize.poster.rawValue + backdrop_path)
-            self.imageView?.sd_setImage(with: url, completed: nil)
+             self.imageView?.sd_setImage(with: url, completed: nil)
         }
+        
+
     }
 }
