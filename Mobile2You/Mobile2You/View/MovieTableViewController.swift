@@ -24,7 +24,7 @@ class MovieTableViewController: UITableViewController {
         
         image.alpha = 0.0
         
-        UIView.animate(withDuration: 2.5) {
+        UIView.animate(withDuration: 3.5) {
             self.image.alpha = 1.0
         }
     }
